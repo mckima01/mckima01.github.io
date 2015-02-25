@@ -1,7 +1,7 @@
 <Head> 
 <style>
  .border {border: 1px solid black; z-index: 1;  }
-     body {background-image: url("https://scontent-lga.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p180x540/1655852_10153761804005082_691932730_n.jpg?oh=4de0571f4e9f0d51e464badce50b2eea&oe=554C7C69");background-size:100% 100%; }
+     body {z-index: -1; background-image: url("https://scontent-lga.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p180x540/1655852_10153761804005082_691932730_n.jpg?oh=4de0571f4e9f0d51e464badce50b2eea&oe=554C7C69");background-size:100% 100%; }
 .change {color:blue;}
  
 </style>
