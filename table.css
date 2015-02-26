@@ -5,8 +5,8 @@
 .table {width: 100%;}
 .x { border: 5px solid green;}
 .y {background-color: green;color: white;}
-.caption { font-style: oblique; font size:30px;} 
- .border2 {border-style: silver;
+.caption { color: red; font-style: oblique; font size:60px;} 
+ .border2 {border-style: dashed;
     border-width: 5 px; }
  
 
