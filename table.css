@@ -5,7 +5,7 @@
 .table {width: 100%;}
 .x { border: 5px solid green;}
 .y {background-color: green;color: white;}
-.font { color: red; font-style: oblique; font-size:60 px;} 
+.font { color: red; font-style: oblique; font-size:200 px;} 
  .border2 {border-style: dashed; border-color:silver;
     border-width: 5 px; }
     .border3 {border-style: solid; background-color:rgb(128,128,128);
