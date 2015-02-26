@@ -8,5 +8,7 @@
 .font { color: red; font-style: oblique; font size:34pt;} 
  .border2 {border-style: dashed; border-color:silver;
     border-width: 5 px; }
+    .border3 {border-style: solid; background-color:gray;
+    border-width: 5 px; }
  
 
