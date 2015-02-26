@@ -6,6 +6,7 @@
 .x { border: 5px solid green;}
 .y {background-color: green;color: white;}
 .caption { font-style: oblique; font size:30px;} 
- 
+ .border2 {border-style: silver;
+    border-width: 5 px; }
  
 
