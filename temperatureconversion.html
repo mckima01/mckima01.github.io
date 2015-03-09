@@ -14,11 +14,10 @@
   calculate=function() {
     mybox=document.querySelector("thebox");
    celsius=mybox.value;
-    thepar=document.querySelector("output").value * 1.8 + 32;
-    
-  }
+    thepar=document.querySelector("output"); thepar.innerHTML=celsius * 1.8 + 32;
+    }
   
-  }
+  
 </script>
 
 
