@@ -7,14 +7,15 @@
 <label for="thebox">Degrees Celsius</label>
 <input type="text" id="thebox">
 <button onclick="calculate();">Convert</button>
-<h2 id="output"></h2>
+<input type="text" id="output">
+<label for="output">Degrees Fahrenheiit</label>
 
 <script>
   calculate=function() {
-    thebox=document.querySelector("thebox");
-    celsius=thebox.value;
-    theh2=document.querySelector("output");
-    theh2.innerHTML="calculate" celsius * 1.8 + 32;
+    mybox=document.querySelector("thebox");
+   
+    document.getElementById("thebox").value * 1.8 + 32;
+    
   }
   
   }
