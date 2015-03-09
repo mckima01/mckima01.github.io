@@ -12,9 +12,11 @@
 
 <script>
   calculate=function() {
-    mybox=document.querySelector("thebox");
-   celsius=mybox.value * 1.8 + 32;
-    theh2=document.querySelector("output"); theh2.innerHTML=celsius + " " + "Degrees Fahrenheit";
+    theybox=document.querySelector("thebox");
+    celsius=thebox.value * 1.8 + 32;
+    
+    theh2=document.querySelector("output"); 
+    theh2.innerHTML=celsius + " " + "Degrees Fahrenheit";
     }
   
   
