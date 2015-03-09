@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>BMI Calculator</title>
+</head>
+<body>
+<h1>BMI Calculator</h1>
+<label for="textbox1">Weight in Pounds</label>
+<input type="text" id="textbox1">
+label for="textbox2">Height in Inches</label>
+<button onClick="calculate();">Calculate BMI</button>
+<h2 id="output"></h2>
+
+
+<script>
+  calculate=function() {
+textbox1 = document.querySelector("#textbox1");
+textbox2 = document.querySelector("#textbox2");
+weight = textbox1.value;
+height = textbox2.value;
+result = document.querySelector("#output");
+result.innerHTML=(weight * 703)/(height*height);
+}
+  
+  
+</script>
+
+</body>
+</html>
