@@ -9,10 +9,10 @@
 
 </head>
 <body>
-<h1>Temperature Conversion</h1>
-<label for="thebox">Degrees Celsius</label>
-<input type="range" min=-300 max=300 id="thebox" onmousemove="hello();" value=0>
-<h1 id="outputc"Degrees C: 0</h1>
+<h1>Temperature in Celsius</h1>
+<label for="slider">Degrees Celsius</label>
+<input type="range" min=-300 max=300 id="theslider" onmousemove="hello();" value=0>
+<h1 id="outputc">Degrees C: 0</h1>
 <h1 id="outputf">Degrees F: 32</h1>
 
 
@@ -20,7 +20,7 @@
 
   calculate=function() {
     hello=function() {
-            thebox = document.querySelector("#thebox");
+            thebox = document.querySelector("#theslider");
             temperature = thebox.value;
             theh1c = document.querySelector("#outputc");
             theh1c.innerHTML = "Degrees C: " + temperature;
