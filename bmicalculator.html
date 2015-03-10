@@ -24,11 +24,14 @@
 <script>
   calculate=function() {
 slider1 = document.querySelector("#slider1");
-height=slider1.value;
+height = slider1.value;
 slider2 = document.querySelector("#slider2");
 weight = slider2.value;
 heighth1 = document.querySelector("#heightoutput");
 weighth1 = document.querySelector("#weightoutput");
+theh1 = document.querySelector("#output");
+heighth1.innerHTML="Height: " + height;
+weighth1.innerHTML="Weight: " + weight;
 theh1.innerHTML="Your calculated BMI is " + (weight * 703)/(height*height);
 }
   
