@@ -11,19 +11,21 @@
 <body>
 <h1>Temperature Conversion</h1>
 <label for="thebox">Degrees Celsius</label>
-<input type="text" id="thebox">
-<button onClick="calculate();">Convert to Fahrenheit</button>
-<h2 id="output"></h2>
+<input type="range" min=-300 max=300 id="thebox" onmousemove="hello();" value=0>
+<h1 id="outputc"Degrees C: 0</h1>
+<h1 id="outputf">Degrees F: 32</h1>
 
 
 <script>
 
   calculate=function() {
-    mybox=document.querySelector("#thebox");
-    celsius=thebox.value * 1.8 + 32;
-    
-    theh2=document.querySelector("#output"); 
-    theh2.innerHTML=celsius + " " + "Degrees Fahrenheit";
+    hello=function() {
+            thebox = document.querySelector("#thebox");
+            temperature = thebox.value;
+            theh1c = document.querySelector("#outputc");
+            theh1c.innerHTML = "Degrees C: " + temperature;
+            theh1f = document.querySelector("#outputf");
+            theh1f.innerHTML = "Degrees F: " + (temperature*1.8+32);
     }
   
   
