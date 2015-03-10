@@ -15,22 +15,24 @@
 </style>
 
 <h1>BMI Calculator</h1>
-<label for="textbox1">Weight in Pounds</label>
-<input type="text" id="textbox1">
-<label for="textbox2">Height in Inches</label>
-<input type="text" id="textbox2">
-<button onClick="change();">Calculate BMI</button>
-<h2 id="output"></h2>
+<label for="slider1">Height in Inches</label>
+<input type="range" min=0 max=96 id="slider1" onmousemove="calculate();" value=0>
+<label for="slider2">Weight in Pounds</label>
+<input type="range" min=0 max=500 id="slider2" onmousemove="calculate();" value=0>
+<h1 id="heightoutput">Height: 0</h1>
+<h1 id="weightoutput">Weight: 0</h1>
+<h1 id="output"></h1>
 
 
 <script>
-  change=function() {
-textbox1 = document.querySelector("#textbox1");
-textbox2 = document.querySelector("#textbox2");
-weight = textbox1.value;
-height = textbox2.value;
-result = document.querySelector("#output");
-result.innerHTML=(weight * 703)/(height*height);
+  calculate=function() {
+slider1 = document.querySelector("#slider1");
+height=slider1.value;
+slider2 = document.querySelector("#slider2");
+weight = slider2.value;
+heighth1 = document.querySelector("#heightoutput");
+weighth1 = document.querySelector("#weightoutput");
+theh1.innerHTML="Your calculated BMI is " + (weight * 703)/(height*height);
 }
   
   
