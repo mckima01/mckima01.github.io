@@ -28,17 +28,17 @@
             theh1f = document.querySelector("#outputf");
             theh1f.innerHTML = "Degrees F: " + (temperature*1.8+32);
    
-    if (temperature>90) {
+    if (temperature>40) {
        theindicator=document.querySelector("#theindicator");
        theindicator.innerHTML="Too Hot";
        document.body.style.backgroundColor="orange";
     }
-  if (temperature<40) {
+  if (temperature<00) {
        theindicator=document.querySelector("#theindicator");
        theindicator.innerHTML="Too Cold";
        document.body.style.backgroundColor="lightblue";
     }
-    if (temperature>=40 && temperature <=90) {
+    if (temperature>=0 && temperature <=40) {
        theindicator=document.querySelector("#theindicator");
        theindicator.innerHTML="OK";
        document.body.style.backgroundColor="silver";
