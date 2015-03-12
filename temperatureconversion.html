@@ -26,17 +26,17 @@
    
     if (temperature>90) {
        theindicator=document.querySelector("#theindicator");
-       themessage.innerHTML="Too Hot";
+       theindicator.innerHTML="Too Hot";
        document.body.style.backgroundColor="orange";
     }
   if (temperature<40) {
        theindicator=document.querySelector("#theindicator");
-       themessage.innerHTML="Too Cold";
+       theindicator.innerHTML="Too Cold";
        document.body.style.backgroundColor="lightblue";
     }
     if (temperature>=40 && temperature <=90) {
        theindicator=document.querySelector("#theindicator");
-       themessage.innerHTML="OK";
+       theindicator.innerHTML="OK";
        document.body.style.backgroundColor="silver";
     }
     }
