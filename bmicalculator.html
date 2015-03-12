@@ -31,8 +31,7 @@ theh1 = document.querySelector("#output");
 heighth1.innerHTML="Height: " + height;
 weighth1.innerHTML="Weight: " + weight;
 theh1.innerHTML="Your calculated BMI is " + (weight * 703)/(height*height);
-
-  if (bmi>24) {
+if (bmi>24) {
      theindicator=document.querySelector("#theindicator");
      theindicator.innerHTML="High";
      document.body.style.backgroundColor="blue";
@@ -43,7 +42,7 @@ theh1.innerHTML="Your calculated BMI is " + (weight * 703)/(height*height);
      document.body.style.backgroundColor="gray";
   }
   if (bmi>=19 && bmi<=24) {
-     theindicator=doucment.querySelector("theindicator");
+     theindicator=document.querySelector("theindicator");
      theindicator.innerHTML="OK";
      document.body.style.backgroundColor="Green";
      
