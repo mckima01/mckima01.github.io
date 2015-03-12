@@ -2,10 +2,7 @@
 <head>
 <title>Temperature Conversion</title>
 
-<style>
-   body {background-image: url("https://scontent-ord.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1622185_10153761678760082_1666505093_n.jpg?oh=4ffe6dcf233e951a964037dbf6215914&oe=556FA3F4");background-size:100% 100%; }
-  
-</style>
+
 
 </head>
 <body>
@@ -28,17 +25,17 @@
             theh1f.innerHTML = "Degrees F: " + (temperature*1.8+32);
    
     if (temperature>90) {
-       theindicator=document.querySelector("#themessage");
+       theindicator=document.querySelector("#theindicator");
        themessage.innerHTML="Too Hot";
        document.body.style.backgroundColor="orange";
     }
   if (temperature<40) {
-       theindicator=document.querySelector("#themessage");
+       theindicator=document.querySelector("#theindicator");
        themessage.innerHTML="Too Cold";
        document.body.style.backgroundColor="lightblue";
     }
     if (temperature>=40 && temperature <=90) {
-       theindicator=document.querySelector("#themessage");
+       theindicator=document.querySelector("#theindicator");
        themessage.innerHTML="OK";
        document.body.style.backgroundColor="silver";
     }
