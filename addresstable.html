@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>My Address Table</title>
+<link rel="stylesheetadresstable" type="text/css" href="table.css">
+</head>
+
+<table>
+<caption>My Address Table</caption>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Phone Number</th>
+<th>Email</th>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<body>
+<p></p>
+<label for = "text">First Name</label>
+<input type = "text" value="[enter]" size="40">
+<p></p>
+
+<label for = "text">Last Name</label>
+<input type = "text" value="[enter]" size="40">
+<p></p>
+
+<label for = "text">Phone Number</label>
+<input type = "text" value="[enter]" size="40">
+<p></p>
+
+<label for = "text">Email</label>
+<input type = "text" value="[enter]" size="40">
+<p></p>
+<button onclick="hello();">Add</button>
+<table id="table"></table>
+
+<script>
+hello=function(){
+
+records=document.querySelector("#out");
+
+mm=records.lastChild
+firstentry=mm.innerHTML;
+bm=mm.previousSibling;
+secondentry=bm.innerHTML;
+
+nextentry=parseInt(firstentry) + parseInt(secondentry);
+
+matt=document.createElement("h1");
+matt.innerHTML=nextentry;
+records.appendChild(matt);
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
