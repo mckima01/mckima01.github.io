@@ -32,25 +32,25 @@
 <body>
 <p></p>
 <label for = "text">First Name</label>
-<input type = "text" value="[text here]" size="40">
+<input type = "text" value="[text here]" id="thebox" size="40">
 <p></p>
 <label for = "text">Last Name</label>
-<input type = "text" value="[text here]" size="40">
+<input type = "text" value="[text here]" id="thebox" size="40">
 <p></p>
 <label for = "text">Phone Number</label>
-<input type = "text" value="[text here]" size="40">
+<input type = "text" value="[text here]"id="thebox"  size="40">
 <p></p>
 <label for = "text">Email</label>
-<input type = "text" value="[text here]" size="40">
+<input type = "text" value="[text here]" id="thebox"  size="40">
 <p></p>
 <button onClick="hello();">Add</button>
-<table id="addresstable"></table>
+
 
 <script>
 
 hello=function(){
 
-files=document.querySelector("#addresstable");
+files=document.querySelector("#thebox");
 
 my=addresses.lastChild
 firstentry=my.innerHTML;
