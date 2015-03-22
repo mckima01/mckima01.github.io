@@ -43,35 +43,26 @@
 <label for = "text">Email</label>
 <input type = "text" value="[text here]" size="40">
 <p></p>
-<button onClick="increment();">Add</button>
+<button onClick="hello();">Add</button>
 <table id="addresstable"></table>
 
 <script>
 
-increment=function(){
+hello=function(){
 
-addressess=document.querySelector("#out");
+files=document.querySelector("#output");
 
-lc=addressess.lastChild
-firstentry=lc.innerHTML;
-ps=lc.previousSibling;
-secondentry=ps.innerHTML;
+my=addresses.lastChild
+firstentry=my.innerHTML;
+pi=my.previousSibling;
+secondentry=pi.innerHTML;
 
 nextentry=parseInt(firstentry) + parseInt(secondentry);
 
 newitem=document.createElement("h1");
 newitem.innerHTML=nextentry;
-addressess.appendChild(newitem);
+addresses.appendChild(newitem);
 }
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
