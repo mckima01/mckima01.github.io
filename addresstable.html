@@ -51,18 +51,18 @@
 <script>
 hello=function(){
 
-records=document.querySelector("#out");
+addressess=document.querySelector("#out");
 
-mm=records.lastChild
-firstentry=mm.innerHTML;
-bm=mm.previousSibling;
-secondentry=bm.innerHTML;
+lc=addresses.lastChild
+firstentry=lc.innerHTML;
+ps=lc.previousSibling;
+secondentry=ps.innerHTML;
 
 nextentry=parseInt(firstentry) + parseInt(secondentry);
 
-matt=document.createElement("h1");
-matt.innerHTML=nextentry;
-records.appendChild(matt);
+newitem=document.createElement("h1");
+newitem.innerHTML=nextentry;
+adressess.appendChild(newitem);
 }
 </script>
 </body>
