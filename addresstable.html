@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="addresstablestyle.css">
 
 
-<table id="adresstable">
+<table id="addresstable">
 <caption>My Address Table</caption>
 <tr>
 <th>First Name</th>
@@ -54,23 +54,23 @@ hello = function() {
             emailbox=document.querySelector("#emailarea").value;
             phonenumberbox=document.querySelector("#phonenumberarea").value;
 
-             t = document.querySelector("#table")
+             t = document.querySelector("#addresstable")
              trow = document.createElement("tr")
              td1 = document.createElement("td")
-             contents1 = document.createTextNode(firstnamebox)
+             contents1 = document.createTextNode(firstnamearea)
              td1.appendChild(contents1)
              trow.appendChild(td1)
             td2 = document.createElement("td")
-             contents2 = document.createTextNode(lastnamebox)
+             contents2 = document.createTextNode(lastnamearea)
              td2.appendChild(contents2)
              trow.appendChild(td2)
              t.appendChild(trow)
              td3 = document.createElement("td")
-             contents3 = document.createTextNode(emailbox)
+             contents3 = document.createTextNode(emailarea)
              td3.appendChild(contents3)
              trow.appendChild(td3)
              td4 = document.createElement("td")
-             contents4 = document.createTextNode(phonenumberbox)
+             contents4 = document.createTextNode(phonenumberarea)
              td4.appendChild(contents4)
              trow.appendChild(td4)
              t.appendChild(trow)
