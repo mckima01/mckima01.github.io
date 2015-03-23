@@ -2,11 +2,11 @@ table{ width:100%;
 text-align:center;
 border-spacing:0;
 border-collapse:collapse;
-color;yellow;
+color:yellow;
 }
 tr, td {border: double; border-color:red;}
 
-caption{font-size:30px;color:green; }
+caption{font-size:30px;color:yellow; }
 
 input{text-align:center;}
 body {
