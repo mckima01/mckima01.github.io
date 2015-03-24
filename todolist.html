@@ -1,0 +1,58 @@
+<html>
+<head>
+    <style>
+    li{
+list-style-type: none;
+font-family: sans-serif;
+font-size: 36px; }
+h1 { }
+.makegreen {
+color: green;
+text-decoration: line-through;
+}
+</style>
+    
+</head>    
+<body>
+<label>Item</label>
+<input type="text" id="itemarea">
+<button onclick="addtodo()">Add item</button>
+<button onclick="clearlist()">Clear List</button>
+<h1>My To Do List:</h1>
+<ul id="output">
+</ul>
+    
+<script>
+var count = 0;
+        
+  hello = function() {
+    todo = document.querySelector("#itemarea").value;
+    output = document.querySelector("#output");
+    newli = document.createElement("li");
+            
+    cb = document.createElement("input");
+      cb.type="checkbox";
+      newli.appendChild(cb);
+      te = document.createTextNode(todo);
+      newli.appendChild(te);
+            
+      cb.onclick=hello2;
+            
+      out.appendChild(newli);
+        }
+        
+        hello2 = function() {
+            if (this.checked)
+               this.parentNode.classList.add("makegreen");
+            else
+               this.parentNode.classList.remove("makegreen");
+        }
+        
+         clear=function () {
+        list=document.querySelector("#output");
+        list.innerHTML=" "
+        }
+    </script>
+    
+</body>
+</html>
