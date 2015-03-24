@@ -18,7 +18,7 @@ text-decoration: line-through;
 <label>Item</label>
 <input type="text" id="itemarea">
 <button onclick="hello()">Add item</button>
-<button onclick="clear()">Clear List</button>
+<button onclick="clearlist()">Clear List</button>
 <h1 class="change">My To Do List:</h1>
 <ul id="output">
 </ul>
@@ -49,7 +49,7 @@ var count = 0;
                this.parentNode.classList.remove("makegreen");
         }
         
-    clear=function() {
+    clearlist=function() {
         list=document.querySelector("#output");
         list.innerHTML=" "
         }
