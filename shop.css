@@ -1,0 +1,19 @@
+.meat{
+  color: red;
+  }
+.fruit{
+  color: green;
+  }
+.candy{
+  color: purple;
+  }
+.bakery{
+  color:tan;
+  }
+.li{
+  width:10px;
+  list-style-type: none;
+}  
+input:checked~.li{
+      text-decoration: line-through;
+    }
