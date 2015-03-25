@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="shop.css" type="text/css">
+  </head>
+  <body >
+    <ul id="list"></ul>
+      <input type="text" id="item"/>
+      <select id="type">
+        <option>meat</option>
+        <option>candy</option>
+        <option>bakery</option>
+        <option>fruit</option>
+      </select>
+      <button onclick="addItem();">Add</button>
+      
+      <script type="text/javascript">
+       addItem = function() {
+           myNewItem = document.querySelector('#item');
+           myItemNode = document.createTextNode(myNewItem.value);
+           aType = document.querySelector('#type');
+           theList= document.querySelector('#list');
+           li= document.createElement("li");
+           li.classList.add(aType.value);
+           cb= document.createElement("input");
+           cb.type="checkbox";
+           cb.onClick="checkMe()";
+           //li.class="doneTask";
+           li.appendChild(cb);
+           li.appendChild(myItemNode);
+           theList.appendChild(li);
+           myNewItem.value = " ";
+           localSave("list");
+       }
+       
+     
+       checkMe = function() {
+         if (this.parentNode.checked){
+           this.class="doneTask";
+         }
+        else{
+          this.class.remove;
+        }
+       }
+         </script>
+        
+         
+         <script type="text/javascript">
+           window.onload= function() {
+           restoreList("list", doneTask)
+         </script>
+  </body>
+<html>
